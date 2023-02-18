@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 400px;
+            width: 400px;
+            margin: 100px auto;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            height: 400px;
+            width: 400px;
+        }
+        .text{
+            overflow: hidden;
+            position: absolute;
+            color: rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255, 0.486);
+            top: 20px; 
+            height: 0;
+            width: 100%;
+            /* bottom: 0; */
+            left: 0;
+            right: 0;
+            transition: 1s all ease;
+        }
+        .main:hover .text{
+             height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="02.jpg" alt="">
+        <div class="text">
+            <h1>Hello this house 150/-rs
+            </h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .list{
+
+            background-color: rgb(255, 124, 92);
+        }
+        .list .nav{
+            display: flex;
+            gap: 10px;
+            color: white;
+        }
+        .list .nav li{
+            padding: 20px;
+            background-color: rgb(2, 131, 131);
+        }
+        .list .nav li a{
+            color: white;
+        }
+        .ser-menu{
+            position: relative;
+        }
+        .inner-menu{
+            position: absolute;
+            display: none;
+            top: 58px;
+            width: 120px;
+            left: 0;
+        }
+        .ser-menu .inner-menu li{
+            background-color: rgb(143, 134, 9);
+            padding: 10px 20px;
+        }
+        .ser-menu:hover .inner-menu{
+            display: block;
+        }
+        .ser-menu span{
+            
+        }
+        .ser-menu:hover span{
+            transform: rotate(180deg);
+        }
+        .nested-menu-head{
+            position: relative;
+        }
+        .nested-menu{
+            display: none;   
+            position: absolute;
+            top: 3px;
+            left: 119px;
+            width: 145px;
+        }
+        .nested-menu li{
+            background-color: rgb(5, 19, 218) !important;
+        }
+        .nested-menu-head:hover .nested-menu{
+            display: block;
+        }
+        .divide::after{
+            content: "";
+            height: 2px;
+            width: 120px;
+            background-color: rgb(255, 255, 255);
+            display: block;
+        }
+        .divide1::after{
+            content: "";
+            height: 2px;
+            width: 14   0px;
+            background-color: rgb(110, 105, 105);
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="list">
+        <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li class="ser-menu"><a href="">Service <span class="fa-solid fa-angle-down"></span></a>
+                <ul class="inner-menu">
+                    <li><a href="">Service1</a></li>
+                    <div class="divide"></div>
+                    <li class="nested-menu-head"><a href="">Service2</a>
+                        <span class="fa-solid fa-angle-left "></span>
+                        <ul class="nested-menu">
+                            <li>Inner Service 1</li>
+                            <div class="divide1"></div>
+                            <li>Inner Service 2</li>
+                        </ul>
+                    </li>
+                    <div class="divide"></div>
+                    <li><a href="">Service3</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

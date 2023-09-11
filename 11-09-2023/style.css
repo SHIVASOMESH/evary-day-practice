@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    margin: 0px 180px;
+}
+header{
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    width: 100%;
+}
+
+header .head-p{
+    padding: 20px 0px;
+}
+header .head-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+header .head-flex .logo{
+    flex: 0.3;
+}
+header .head-flex .logo h1{
+    color: white;
+}
+header .head-flex .logo span{
+    color: #ff5e14;
+}
+header .head-flex .nav{
+    flex: 1;
+}
+header .head-flex .nav ul{
+    display: flex;
+    gap: 25px;
+}
+header .head-flex .nav ul li{
+    font-size: 20px;
+}
+header .head-flex .nav ul li a{
+    color: white;
+}
+header .head-flex .theme{
+    flex: 1;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: end;
+}
+header .head-flex .theme .search {
+    position: relative;
+}
+header .head-flex .theme .search span{
+    color: #ff5e14;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: -12px;
+    right: 13px;
+    z-index: 1;
+}
+header .head-flex .theme .search .input{
+    height: 55px;
+    width: 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0px 10px;
+    display: none;
+
+
+}
+header .head-flex .theme .search .in{
+    display: block;
+    transition: 10s all ease;
+    width: 350px;
+}
+header .head-flex .theme .search .ss{
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    z-index: 1;
+}
+
+header .head-flex .theme .search input:focus{
+    outline: none;
+}
+header .head-flex .theme .request{
+    display: block;
+}
+
+header .head-flex .theme .request button{
+    font-size: 17px;
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    background-color: white;
+    color: #ff5e14;
+}   
+header .head-flex .theme .moon{
+    display: flex;
+    gap: 20px;
+}
+header .head-flex .theme .moon span{
+    color: white;
+    font-size: 25px;
+}
+header .head-flex .theme .moon .bars-t{
+    display: none;
+}
+
+header .head-flex .theme .moon .bars-t span{
+    height: 40px;
+    width: 40px;
+    background-color: #ff5e14;
+    color: white;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+}
+
+
+/*===================================== Home-page ====================================*/
+
+
+.home-page{
+   background-color: #ff5e14;
+}
+
+.home-page .slide-1{
+    background-image: url(images/banner1.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.home-page .slide-1::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.349);
+    z-index: -1;
+}
+
+
+
+.home-page .slide-2{
+    background-image: url(images/banner2.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+.home-page .slide-2::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: -1;
+}
+
+
+
+
+.home-page .slide-3{
+    background-image: url(images/banner3.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+.home-page .slide-3::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: -1;
+}
+
+
+
+
+
+.home-page .slide-coursel {
+    padding: 150px 180px 50px 180px;
+    color: white;
+    width: 60%;
+}
+.home-page .slide-coursel p{
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-bottom: 40px;
+}
+.home-page .slide-coursel h1{
+    font-size: 60px;
+    padding-bottom: 40px;
+}
+.home-page .slide-coursel .home-flex{
+    display: flex;
+    gap: 30px;
+}
+.home-page .slide-coursel .home-flex .service-1{
+    display: flex;
+    gap: 10px;
+}
+.home-page .slide-coursel .home-flex .service-1 .icon {
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: #ff5e14;
+    display: grid;
+    place-content: center;
+}
+.home-page .slide-coursel .home-flex .service-1 .icon span{
+    font-size: 30px;
+}
+.home-page .slide-coursel .home-flex .service-1 .right-text p{
+    padding-bottom: 5px;
+}
+.home-page .slide-coursel .home-flex .service-1 .right-text h3{
+    font-family: sans-serif;
+    font-size: 27px;
+}
+.home-page .slide-coursel .home-btn {
+    display: flex;
+    gap: 20px;
+}
+.home-page .slide-coursel .home-btn button{
+    height: 55px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.home-page .slide-coursel .home-btn .btn1{
+    background-color: #ff5e14;
+    color: white;
+}
+.home-page .slide-coursel .home-btn .btn2{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+
+
+.owl-dots{
+    display: none;
+}
+
+.owl-nav {
+    display: none;
+}
+.owl-btn button{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+}
+
+/*=======================================  About Us =================================*/
+.about-us .about-p{
+    padding: 80px 0px;
+}
+.about-us .text{
+    display: flex;
+    gap: 50px;
+    padding: 0px 0px 80px 0px;
+}
+.about-us .text .left{
+    flex: 1;
+}
+.about-us .text .left p{
+    color:#ff5e14;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.about-us .text .left h3{
+    font-size: 40px;
+}
+.about-us .text .right{
+    flex: 1;
+}
+.about-us .text .right p{
+    line-height: 30px;
+    color: gray;
+}
+
+
+.about-us .img{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+.about-us .img .box-r1{
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+.about-us .box1 img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    max-width: 100%;
+    transform: scale(1);
+    transition: 0.5 ease all;
+}
+
+.about-us .box1:hover img{
+    transform: scale(1.5);
+    
+}
+
+.about-us .img .box1 img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+.about-us .img .text1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 111;
+    padding: 80px 40px;
+    
+}
+
+
+
+.about-us .img .box-r2{
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+.about-us .img .box2 img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    max-width: 100%;
+
+}
+
+.about-us .img .box2 img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+.about-us .img .text2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 111;
+    padding: 80px 40px;
+    
+}
+
+
+
+
+.about-us .img .box-r3{
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
+}
+.about-us .img .box3 img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    max-width: 100%;
+
+}
+
+.about-us .img .box3 img::after{
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.582);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.about-us .img .text3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 111;
+    padding: 80px 40px;
+    
+}
+
+
+.about-us .img  p{
+    padding-bottom: 40px;
+}
+.about-us .img  h4{
+    font-size: 30px;
+}

@@ -1,0 +1,21 @@
+@media (min-width:1200px) {
+    header .container{
+        margin: 0px 120px;
+    }
+
+    header .head-flex .theme .request{
+        display: none;
+    }
+    header .head-flex .nav{
+        display: block;
+        flex: 1;
+    }
+    header .head-flex .theme{
+        flex: 0.8;
+    }
+    
+    /*===================================== Home-page ====================================*/
+    .home-page .slide-coursel {
+        padding: 200px 120px 50px;
+    }
+}

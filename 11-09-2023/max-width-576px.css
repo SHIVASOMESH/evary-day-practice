@@ -1,0 +1,47 @@
+@media (max-width:576px) {
+    header .container{
+        margin: 0px 50px;
+    }
+    header .head-flex .logo{
+        flex: 0.5;
+    }
+    header .head-flex .logo h1{
+        font-size: 25px;
+    }
+    header .head-flex .logo span{
+        font-size: 25px;
+    }
+    header .head-flex .nav{
+        display: none;
+    }
+    header .head-flex .theme .search span{
+        display: none;
+    }
+    header .head-flex .theme .request{
+        display: none;
+    }
+    header .head-flex .theme{
+        flex: 0.5;
+    }
+    header .head-flex .theme .moon .bars-t{
+        display: block;
+    }
+    
+/*===================================== Home-page ====================================*/
+
+
+.home-page .slide-coursel {
+    padding: 150px 50px 50px;
+    width: 100%;
+}
+
+.home-page .slide-coursel h1{
+    font-size: 30px;
+}
+
+.home-page .slide-coursel .home-flex{
+    flex-direction: column;
+}
+
+
+}

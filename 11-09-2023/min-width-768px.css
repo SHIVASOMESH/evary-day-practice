@@ -1,0 +1,34 @@
+@media (min-width:768px) {
+    header .container{
+        margin: 0px 120px;
+    }
+    header .head-flex .logo{
+        flex: 0.5;
+    }
+    header .head-flex .logo h1{
+        font-size: 35px;
+    }
+    header .head-flex .logo span{
+        font-size: 35px;
+    }
+    header .head-flex .theme{
+        flex: 0.7;
+    }
+
+    /*===================================== Home-page ====================================*/
+
+
+.home-page .slide-coursel {
+    padding: 200px 120px 0px 0px;
+    width: 100%;
+}
+
+.home-page .slide-coursel h1{
+    font-size: 60px;
+}
+
+.home-page .slide-coursel .home-flex{
+    flex-direction: row;
+}
+
+}

@@ -1,0 +1,31 @@
+@media (min-width:992px) {
+    header .container{
+        margin: 0px 80px;
+    }
+    header .head-flex .logo{
+        flex: 0.3;
+    }
+    header .head-flex .nav{
+        display: block;
+        flex: 0.5;
+    }
+
+    header .head-flex .theme .search span{
+        display: block;
+    }
+    header .head-flex .theme{
+        flex: 0.3;
+    }
+    header .head-flex .theme .moon .bars-t{
+        display: none;
+    }
+
+
+    /*===================================== Home-page ====================================*/
+    .home-page .slide-coursel {
+        padding: 200px 80px 50px;
+        width: 60%;
+    }
+
+
+    }
